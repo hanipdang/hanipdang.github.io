@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한입당 · 대전 취미 소모임</title>
+<meta name="description" content="대전, 노잼 도시 아니다! 카페 탐방부터 보드게임, 동네 축제까지 매번 다른 취미를 한입씩 맛보는 대전 취미 소모임 한입당이에요.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F6EFE4">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="한입당 · 대전 취미 소모임">
+<meta property="og:description" content="대전, 노잼 도시 아니다! 취미 '한입' 하러 가실래요?">
+<meta property="og:image" content="https://hanipdang.github.io/og-image.jpg">
+<meta property="og:url" content="https://hanipdang.github.io/">
+<link rel="preload" href="assets/fonts/RiaSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Just Another Hand";src:url("assets/fonts/JustAnotherHand-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
+
+@font-face{font-family:"Ria Sans";src:url("assets/fonts/RiaSans-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Ria Sans";src:url("assets/fonts/RiaSans-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Ria Sans";src:url("assets/fonts/RiaSans-ExtraBold.woff2") format("woff2");font-weight:800;font-display:swap}
+html{scroll-behavior:smooth}
+body{margin:0;background:#F6EFE4}
+section[id]{scroll-margin-top:84px}
+img{max-width:100%}
+.menu-btn{display:none}
+.mobile-menu{display:none}
+:focus-visible{outline:2px solid #5E6B3F;outline-offset:3px}
+a{color:#5E6B3F}a:hover{color:#3F4A28}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px;box-sizing:border-box}
+.nav-links{display:flex;gap:32px;align-items:center}
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:56px;align-items:center}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;box-sizing:border-box}
+.btn-solid{background:#5E6B3F;color:#F6F4EA}.btn-solid:hover{background:#4C5733;color:#F6F4EA}
+.btn-line{border:1.5px solid #3B2F27;color:#3B2F27}.btn-line:hover{background:#EBDCC8;color:#3B2F27}
+.btn-cream{background:#F6EFE4;color:#3B2F27}.btn-cream:hover{background:#EBDCC8;color:#3B2F27}
+.btn-cline{border:1.5px solid #F6EFE4;color:#F6EFE4}.btn-cline:hover{background:#4C5733;color:#F6EFE4}
+.card{background:#FBF7F0;border:1px solid #E3D3BC;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:#3B2F27}
+.card:hover{border-color:#5E6B3F;color:#3B2F27}
+@media (max-width:760px){
+.wrap{padding:0 20px}
+.nav-links{display:none}
+.menu-btn{display:flex}
+.mobile-menu.open{display:flex}
+.hero,.about{grid-template-columns:minmax(0,1fr);gap:32px}
+.stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.cards,.steps{grid-template-columns:minmax(0,1fr);gap:16px}
+.h1{font-size:40px !important}
+.h2{font-size:30px !important}
+.stat-num{font-size:26px !important}
+.photo-main{height:400px !important}
+.photo-sub{width:150px !important;height:190px !important;right:-4px !important;bottom:-28px !important}
+.sec{padding-top:72px !important;padding-bottom:72px !important}
+.polaroid{left:12px !important}
+.cta-row{flex-direction:column;align-items:stretch !important}
+}
+</style>
+</head>
+<body>
+<div style="background:#F6EFE4;color:#3B2F27;font-family:'Ria Sans',system-ui,sans-serif;word-break:keep-all">
+
+<header style="position:sticky;top:0;z-index:5;background:#F6EFE4;border-bottom:1px solid #E3D3BC">
+<div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:76px">
+<a href="#top" aria-label="한입당 홈" style="display:flex;align-items:center"><img src="assets/logo/hanipdang-wordmark-green.svg" alt="한입당" style="height:30px;width:auto;display:block"></a>
+<nav aria-label="메인 메뉴" style="display:flex;align-items:center;gap:32px">
+<div class="nav-links" style="font-size:16px;font-weight:700">
+<a href="#about" style="color:#3B2F27;text-decoration:none">한입당이란?</a>
+<a href="#menu" style="color:#3B2F27;text-decoration:none">한입 메뉴판</a>
+<a href="#join" style="color:#3B2F27;text-decoration:none">같이 한입하기</a>
+</div>
+<a href="https://instagram.com/hanip_dang" target="_blank" rel="noopener" aria-label="한입당 인스타그램" style="display:flex;width:44px;height:44px;align-items:center;justify-content:center;border-radius:999px;color:#3B2F27">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg>
+</a>
+<button class="menu-btn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu" style="width:44px;height:44px;align-items:center;justify-content:center;border:0;background:none;color:#3B2F27;cursor:pointer;padding:0">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+</button>
+</nav>
+</div>
+<div id="mobile-menu" class="mobile-menu" style="flex-direction:column;border-top:1px solid #E3D3BC;padding:8px 20px 16px;font-size:17px;font-weight:700">
+<a href="#about" style="color:#3B2F27;text-decoration:none;padding:12px 0;min-height:44px;box-sizing:border-box">한입당이란?</a>
+<a href="#menu" style="color:#3B2F27;text-decoration:none;padding:12px 0;min-height:44px;box-sizing:border-box">한입 메뉴판</a>
+<a href="#join" style="color:#3B2F27;text-decoration:none;padding:12px 0;min-height:44px;box-sizing:border-box">같이 한입하기</a>
+</div>
+</header>
+
+<section id="top" class="sec" style="padding:88px 0 104px">
+<div class="wrap hero">
+<div style="display:flex;flex-direction:column;gap:28px">
+<p style="margin:0;font-family:'Just Another Hand',cursive;font-size:30px;line-height:1;color:#5E6B3F">Daejeon hobby club · since Oct. 2026</p>
+<h1 class="h1" style="margin:0;font-size:64px;line-height:1.15;font-weight:800;letter-spacing:-0.02em;color:#3B2F27">대전, 노잼 도시<br>아니다!</h1>
+<p style="margin:0;font-size:24px;line-height:1.5;font-weight:700;color:#5E6B3F">취미 '한입' 하러 가실래요?</p>
+<p style="margin:0;font-size:17px;line-height:1.75;color:#5C4D41;max-width:460px">카페 탐방부터 보드게임, 동네 축제까지. 매번 다른 취미를 한입씩 맛보면서 나한테 맞는 걸 찾아가는 대전 소모임이에요.</p>
+<div class="cta-row" style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+<a class="btn btn-solid" href="#join">같이 한입하기</a>
+<a class="btn btn-line" href="https://instagram.com/hanip_dang" target="_blank" rel="noopener">인스타그램 구경하기</a>
+</div>
+</div>
+<div style="position:relative;padding-bottom:36px">
+<img class="photo-main" src="assets/img/leather-sofa.jpg" alt="엘오공이커피로스터즈의 가죽 소파 자리" style="width:100%;height:520px;object-fit:cover;border-radius:28px;display:block">
+<figure class="polaroid" style="margin:0;position:absolute;left:-28px;bottom:0;background:#FBF7F0;padding:10px 10px 6px;border-radius:14px;transform:rotate(-4deg);box-shadow:0 10px 24px rgba(59,47,39,0.14)">
+<img class="photo-sub" src="assets/img/iced-coffee-tray.jpg" alt="트레이에 놓인 아이스 커피 두 잔" style="width:180px;height:220px;object-fit:cover;border-radius:8px;display:block">
+<figcaption style="font-family:'Just Another Hand',cursive;font-size:24px;line-height:1.2;color:#3B2F27;padding-top:4px;text-align:center">today's hanip ☕</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<section aria-label="한입당 한눈에 보기" style="background:#EBDCC8">
+<div class="wrap stats" style="padding-top:36px;padding-bottom:36px">
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;text-align:center">
+<span class="stat-num" style="font-size:36px;font-weight:800;color:#5E6B3F">6번</span>
+<span style="font-size:15px;color:#5C4D41">지금까지 다녀온 한입</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;text-align:center">
+<span class="stat-num" style="font-size:36px;font-weight:800;color:#5E6B3F">8명</span>
+<span style="font-size:15px;color:#5C4D41">함께하는 멤버</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;text-align:center">
+<span class="stat-num" style="font-size:36px;font-weight:800;color:#5E6B3F">주말</span>
+<span style="font-size:15px;color:#5C4D41">주말·공휴일에 모여요</span>
+</div>
+</div>
+</section>
+
+<section id="menu" class="sec" style="padding:104px 0">
+<div class="wrap" style="display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p style="margin:0;font-family:'Just Another Hand',cursive;font-size:26px;line-height:1;color:#5E6B3F">recent hanip</p>
+<h2 class="h2" style="margin:0;font-size:40px;line-height:1.2;font-weight:800;color:#3B2F27">최근 한입</h2>
+</div>
+<a href="#menu" style="font-size:16px;font-weight:700;display:inline-flex;align-items:center;min-height:44px">한입 메뉴판 전체 보기 →</a>
+</div>
+<div class="cards">
+<a class="card" href="#menu">
+<img src="assets/img/round-window-seat.jpg" alt="둥근 창이 있는 카페 좌석" style="width:100%;height:280px;object-fit:cover;display:block">
+<div style="padding:20px 22px 24px;display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:8px;flex-wrap:wrap"><span style="background:#5E6B3F;color:#F6F4EA;font-size:13px;font-weight:700;padding:5px 12px;border-radius:999px">먹고 마시기</span><span style="background:#EBDCC8;color:#5C4D41;font-size:13px;padding:5px 12px;border-radius:999px">카페 탐방</span></div>
+<h3 style="margin:0;font-size:21px;line-height:1.35;font-weight:700">엘오공이커피로스터즈</h3>
+<p style="margin:0;font-size:15px;line-height:1.6;color:#5C4D41">[한 줄 후기를 적어주세요]</p>
+<span style="font-family:'Just Another Hand',cursive;font-size:22px;line-height:1;color:#7A6A5C">[2026. 00. 00]</span>
+</div>
+</a>
+<a class="card" href="#menu">
+<div role="img" aria-label="사진 준비 중" style="height:280px;background:#EBDCC8;display:flex;align-items:center;justify-content:center;color:#7A6A5C;font-size:15px">[축제 사진 준비 중]</div>
+<div style="padding:20px 22px 24px;display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:8px;flex-wrap:wrap"><span style="background:#5E6B3F;color:#F6F4EA;font-size:13px;font-weight:700;padding:5px 12px;border-radius:999px">대전 나들이</span><span style="background:#EBDCC8;color:#5C4D41;font-size:13px;padding:5px 12px;border-radius:999px">축제</span></div>
+<h3 style="margin:0;font-size:21px;line-height:1.35;font-weight:700">유성 국화 축제</h3>
+<p style="margin:0;font-size:15px;line-height:1.6;color:#5C4D41">[한 줄 후기를 적어주세요]</p>
+<span style="font-family:'Just Another Hand',cursive;font-size:22px;line-height:1;color:#7A6A5C">[2026. 00. 00]</span>
+</div>
+</a>
+<a class="card" href="#menu">
+<div role="img" aria-label="사진 준비 중" style="height:280px;background:#EBDCC8;display:flex;align-items:center;justify-content:center;color:#7A6A5C;font-size:15px">[축제 사진 준비 중]</div>
+<div style="padding:20px 22px 24px;display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:8px;flex-wrap:wrap"><span style="background:#5E6B3F;color:#F6F4EA;font-size:13px;font-weight:700;padding:5px 12px;border-radius:999px">대전 나들이</span><span style="background:#EBDCC8;color:#5C4D41;font-size:13px;padding:5px 12px;border-radius:999px">축제</span></div>
+<h3 style="margin:0;font-size:21px;line-height:1.35;font-weight:700">탄방동 할로윈 축제</h3>
+<p style="margin:0;font-size:15px;line-height:1.6;color:#5C4D41">[한 줄 후기를 적어주세요]</p>
+<span style="font-family:'Just Another Hand',cursive;font-size:22px;line-height:1;color:#7A6A5C">[2026. 00. 00]</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+
+<section id="about" class="sec" style="padding:104px 0;background:#FBF7F0;border-top:1px solid #E3D3BC;border-bottom:1px solid #E3D3BC">
+<div class="wrap about">
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px">
+<img src="assets/img/selfie-window.jpg" alt="창가 소파에 모여 앉은 멤버들" style="width:100%;height:340px;object-fit:cover;border-radius:20px;display:block">
+<img src="assets/img/bakery-case.jpg" alt="카페의 빵 진열대" style="width:100%;height:340px;object-fit:cover;border-radius:20px;display:block;margin-top:48px">
+</div>
+<div style="display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p style="margin:0;font-family:'Just Another Hand',cursive;font-size:26px;line-height:1;color:#5E6B3F">about us</p>
+<h2 class="h2" style="margin:0;font-size:40px;line-height:1.25;font-weight:800">한입당은 이렇게<br>한입씩 맛봐요</h2>
+</div>
+<ol style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:20px">
+<li style="display:flex;gap:16px;align-items:flex-start">
+<span aria-hidden="true" style="flex:none;width:40px;height:40px;border-radius:999px;background:#5E6B3F;color:#F6F4EA;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px">1</span>
+<div style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:19px;font-weight:700">취미 맛보기</strong><span style="font-size:16px;line-height:1.6;color:#5C4D41">카페, 보드게임, 축제처럼 부담 없는 것부터 같이 해봐요.</span></div>
+</li>
+<li style="display:flex;gap:16px;align-items:flex-start">
+<span aria-hidden="true" style="flex:none;width:40px;height:40px;border-radius:999px;background:#5E6B3F;color:#F6F4EA;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px">2</span>
+<div style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:19px;font-weight:700">나에게 맞는 취미 찾기</strong><span style="font-size:16px;line-height:1.6;color:#5C4D41">여러 번 맛보다 보면 오래 하고 싶은 게 생겨요.</span></div>
+</li>
+<li style="display:flex;gap:16px;align-items:flex-start">
+<span aria-hidden="true" style="flex:none;width:40px;height:40px;border-radius:999px;background:#5E6B3F;color:#F6F4EA;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px">3</span>
+<div style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:19px;font-weight:700">대전 문화 같이 만들기</strong><span style="font-size:16px;line-height:1.6;color:#5C4D41">우리가 다닌 곳이 쌓일수록 대전은 더 재밌어져요.</span></div>
+</li>
+</ol>
+<p style="margin:0;font-size:16px;line-height:1.7;color:#5C4D41;padding:16px 20px;background:#F6EFE4;border-radius:14px">한입당은 아직 만들어가는 중이에요.<br>하고 싶은 한입이 있다면 같이 채워주세요.</p>
+</div>
+</div>
+</section>
+
+<section class="sec" style="padding:104px 0 40px">
+<div class="wrap">
+<div style="border:1.5px dashed #5E6B3F;border-radius:24px;padding:32px 36px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
+<div style="display:flex;flex-direction:column;gap:8px">
+<p style="margin:0;font-family:'Just Another Hand',cursive;font-size:26px;line-height:1;color:#5E6B3F">next hanip</p>
+<h2 style="margin:0;font-size:28px;line-height:1.3;font-weight:800">다음 한입: [활동 이름]</h2>
+<p style="margin:0;font-size:16px;color:#5C4D41">[날짜] · [장소] · 일정은 인스타그램에서 먼저 알려드려요</p>
+</div>
+<a class="btn btn-line" href="https://instagram.com/hanip_dang" target="_blank" rel="noopener">일정 확인하기</a>
+</div>
+</div>
+</section>
+
+<section id="join" class="sec" style="padding:64px 0 104px">
+<div class="wrap">
+<div style="background:#5E6B3F;border-radius:32px;padding:64px 48px;display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center;color:#F6EFE4">
+<img src="assets/logo/hanipdang-wordmark-cream.svg" alt="" style="height:36px;width:auto;display:block">
+<h2 class="h2" style="margin:0;font-size:40px;line-height:1.3;font-weight:800;color:#F6EFE4">같이 한입할래요?</h2>
+<p style="margin:0;font-size:17px;line-height:1.7;color:#E9E3D3;max-width:520px">혼자 와도 괜찮아요. 신청 폼을 작성하거나 인스타그램 DM을 보내주시면 첫 모임을 안내해드릴게요.</p>
+<div class="cta-row" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;padding-top:8px">
+<a class="btn btn-cream" href="#join" aria-describedby="form-note">신청 폼 작성하기</a>
+<a class="btn btn-cline" href="https://instagram.com/hanip_dang" target="_blank" rel="noopener">인스타그램 DM 보내기</a>
+</div>
+<p id="form-note" style="margin:0;font-size:14px;color:#E9E3D3">신청 폼은 곧 열려요. 지금은 인스타그램 DM으로 연락 주세요.</p>
+</div>
+</div>
+</section>
+
+<footer style="border-top:1px solid #E3D3BC">
+<div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:32px;padding-bottom:40px">
+<div style="display:flex;align-items:center;gap:12px">
+<img src="assets/logo/hanipdang-symbol-circle-green.svg" alt="" style="width:40px;height:40px;display:block">
+<span style="font-size:15px;color:#5C4D41">대전 취미 소모임 한입당</span>
+</div>
+<div style="display:flex;align-items:center;gap:20px;font-size:15px;color:#5C4D41">
+<a href="https://instagram.com/hanip_dang" target="_blank" rel="noopener" style="font-family:'Just Another Hand',cursive;font-size:24px;text-decoration:none">@hanip_dang</a>
+<span>© 2026 한입당</span>
+</div>
+</div>
+</footer>
+
+</div>
+<script>
+(function(){var b=document.querySelector('.menu-btn'),m=document.getElementById('mobile-menu');if(!b||!m)return;
+function set(o){m.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'메뉴 닫기':'메뉴 열기');}
+b.addEventListener('click',function(){set(!m.classList.contains('open'));});
+m.addEventListener('click',function(e){if(e.target.tagName==='A')set(false);});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});})();
+</script>
+</body>
+</html>
