@@ -45,6 +45,7 @@ a{color:#5E6B3F}a:hover{color:#3F4A28}
 .card-img{width:100%;height:280px;object-fit:cover;display:block}
 .card > div{flex:1}
 .swipe-hint{display:none}
+.mo-br{display:none}
 .stat-num{white-space:nowrap}
 /* 태블릿 가로·작은 노트북 */
 @media (max-width:1199px){
@@ -67,8 +68,10 @@ a{color:#5E6B3F}a:hover{color:#3F4A28}
 .menu-btn{display:flex}
 .mobile-menu.open{display:flex}
 .hero,.about{grid-template-columns:minmax(0,1fr);gap:32px}
-.stats{grid-template-columns:minmax(0,1fr);gap:14px}
-.stat{flex-direction:row !important;justify-content:center;align-items:baseline !important;gap:12px !important}
+.stats{grid-template-columns:auto auto;justify-content:center;align-items:baseline;column-gap:14px;row-gap:14px}
+.stat{display:contents !important}
+.stat .stat-num{text-align:right}
+.stat span:last-child{text-align:left}
 .steps{grid-template-columns:minmax(0,1fr);gap:16px}
 .cards{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:0 20px 8px;scroll-padding:0 20px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .cards::-webkit-scrollbar{display:none}
@@ -76,6 +79,7 @@ a{color:#5E6B3F}a:hover{color:#3F4A28}
 .card-img{height:240px}
 .swipe-hint{display:block}
 .pc-br{display:none}
+.mo-br{display:inline}
 .h1{font-size:40px !important}
 .h2{font-size:30px !important}
 .stat-num{font-size:26px !important}
@@ -259,8 +263,8 @@ a{color:#5E6B3F}a:hover{color:#3F4A28}
 <div style="border:1.5px dashed #5E6B3F;border-radius:24px;padding:32px 36px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
 <div style="display:flex;flex-direction:column;gap:8px">
 <p style="margin:0;font-family:'Just Another Hand',cursive;font-size:26px;line-height:1;color:#5E6B3F">next hanip</p>
-<h2 style="margin:0;font-size:28px;line-height:1.3;font-weight:800">매주 화·목·토, 대전 어딘가에서</h2>
-<p style="margin:0;font-size:16px;color:#5C4D41">다음 한입은 인스타그램에서 먼저 알려드려요</p>
+<h2 style="margin:0;font-size:28px;line-height:1.3;font-weight:800">매주 화·목·토,<br class="mo-br"> 대전 어딘가에서</h2>
+<p style="margin:0;font-size:16px;color:#5C4D41">다음 한입은 인스타그램에서<br class="mo-br"> 먼저 알려드려요</p>
 </div>
 <a class="btn btn-line" href="https://instagram.com/hanip_dang" target="_blank" rel="noopener">일정 확인하기</a>
 </div>
@@ -272,7 +276,7 @@ a{color:#5E6B3F}a:hover{color:#3F4A28}
 <div style="background:#5E6B3F;border-radius:32px;padding:64px 48px;display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center;color:#F6EFE4">
 <img src="assets/logo/hanipdang-wordmark-cream.svg" alt="" style="height:36px;width:auto;display:block">
 <h2 class="h2" style="margin:0;font-size:40px;line-height:1.3;font-weight:800;color:#F6EFE4">같이 한입할래요?</h2>
-<p style="margin:0;font-size:17px;line-height:1.7;color:#E9E3D3;max-width:520px">혼자 와도 괜찮아요. 신청 폼을 작성하거나 인스타그램 DM을 보내주시면 첫 모임을 안내해드릴게요.</p>
+<p style="margin:0;font-size:17px;line-height:1.7;color:#E9E3D3;max-width:520px">혼자 와도 괜찮아요.<br class="mo-br"> 신청 폼을 작성하거나<br class="mo-br"> 인스타그램 DM을 보내주시면<br class="mo-br"> 첫 모임을 안내해드릴게요.</p>
 <div class="cta-row" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;padding-top:8px">
 <!-- ✏️ 신청 폼 주소 -->
 <a class="btn btn-cream" href="https://smore.im/form/jyZXaA6vut" target="_blank" rel="noopener">신청 폼 작성하기</a>
